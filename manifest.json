@@ -5,7 +5,7 @@
   "chrome_url_overrides": { "newtab": "index.html" },
   "incognito": "split",
   "manifest_version": 2,
-  "permission": ["tabs"],
+  "permissions": ["tabs"],
   "background": {
     "scripts": ["scripts.js"],
     "persistent": false
