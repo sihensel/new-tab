@@ -90,6 +90,7 @@ footer a:before {
   font-weight: 600;
   margin-bottom: 0.25em;
   color: #ebdbb2;
+  text-shadow: 2px 2px #282828;
 }
 
 .weather-container {
