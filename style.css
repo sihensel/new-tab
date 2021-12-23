@@ -2,14 +2,14 @@
 
 body {
   background-color: #282828;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("background.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 1, 0, 0.1)), url("background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Roboto Mono';
 }
 
 h2 {
-  color: #d79921;
+  color: #d65d0e;
   padding: 10px;
   padding-left: 5px;
   padding-top: 0;
@@ -18,7 +18,7 @@ h2 {
 
 /* add link animation */
 a, a:visited {
-  color: #98971a;
+  color: #d5c4a1;
   position: relative;
   text-decoration: none;
   font-size: 100%;
@@ -31,7 +31,7 @@ a:before {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #98971a;
+  background-color: #d5c4a1;
   visibility: hidden;
   transform: scaleX(0);
   -webkit-transform: scaleX(0);
@@ -58,13 +58,13 @@ li {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    color: #fff;
-    font-size: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+  color: #d5c4a1;
+  font-size: 15px;
 }
 
 footer a, footer a:visited {
@@ -89,19 +89,19 @@ footer a:before {
   font-size: 3.5rem;
   font-weight: 600;
   margin-bottom: 0.25em;
-  color: #ebdbb2;
-  text-shadow: 2px 2px #282828;
+  color: #d5c4a1;
+  /*text-shadow: 2px 2px #282828;*/
 }
 
 .weather-container {
-  width: 25%;
-  background-color: #282828;
+  width: 19%;
+  background-color: rgb(29, 32, 33, 0.3);
   padding: 10px;
-  border: 3px solid #d65d0e;
+  border: 2px solid #d79921;
   border-radius: 3px;
   margin: 10px;
   font-family: var(--fontFamily);
-  color: #ebdbb2;
+  color: #d5c4a1;
   text-align: center;
 }
 
@@ -111,8 +111,8 @@ footer a:before {
 
 .category {
   width: 30%;
-  background-color: #282828;
-  border: 3px solid #d65d0e;
+  background-color: rgb(29, 32, 33, 0.3);
+  border: 2px solid #d79921;
   border-radius: 3px;
   margin: 10px;
   margin-top: 1vh;
@@ -126,34 +126,3 @@ footer a:before {
   display: flex;
   justify-content: space-evenly;
 }
-
-/* styling of the search bar (currently left out)
-input[type=text] {
-
-  width: 300px;
-  padding: 5px;
-  box-sizing: border-box;
-  margin: auto;
-  border: 1px solid #458588;
-  border-radius: 5px;
-  color: #ebdbb2;
-}
-
-input[type=submit] {
-  color: #ebdbb2;
-  border: 1px solid #458588;
-  border-radius: 5px;
-}
-
-p {
-  color: #ebdbb2;
-}
-
-.search {
-  position: absolute;
-  left: 50%;
-  top: 27%;
-  transform: translate(-50%, -50%);
-  padding: 10px;
-}
-*/
