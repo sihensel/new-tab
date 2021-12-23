@@ -22,22 +22,11 @@ function getWeather() {
 
 function getTime() {
     let date = new Date(),
-        //day = date.getDate();
-        //month = date.getMonth();
-        //year = date.getFullYear();
         min = date.getMinutes(),
         sec = date.getSeconds(),
         hour = date.getHours();
 
     return (
-        /*
-        (day < 10 ? "0" + day : date) +
-        "." +
-        (month < 10 ? "0" + month : month) +
-        "." +
-        year +
-        " - " +
-        */
         (hour < 10 ? "0" + hour : hour) +
         ":" +
         (min < 10 ? "0" + min : min) +
