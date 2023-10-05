@@ -25,4 +25,4 @@ zip new-tab.zip *
 In Firefox, open `about:addons`, click the cog, choose `Install Add-on From File` and select the zip file you just created.<br>
 Firefox is most likely going to complain about the addon being unverified. If it cannot be installed it might be necessary to set `xpinstall.signatures.required` to `false` in `about:config`. If you have any doubts, feel free to verify the source code.
 
-__Note__: You might want to replace the hyperlinks and the city ID for Openweathermap with your own.
+__Note__: You might want to replace the hyperlinks with your own.

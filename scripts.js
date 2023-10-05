@@ -2,18 +2,15 @@
 // load weather from openweathermap.org
 function getWeather() {
     let xhr = new XMLHttpRequest();
-    // Request to open weather map
     xhr.open(
-        "GET", "http://api.openweathermap.org/data/2.5/weather?id=2832939&units=metric&appid=e5b292ae2f9dae5f29e11499c2d82ece"
+        "GET", "https://wttr.in/Albstadt?format=%C+%c+%t"
     );
     xhr.onload = () => {
         if (xhr.readyState === 4) {
             if (xhr.status === 200) {
-                let json = JSON.parse(xhr.responseText);
-                document.getElementById("temp").innerHTML = json.main.temp.toFixed(0) + String.fromCharCode(176) + "C";
-                document.getElementById("weather-description").innerHTML = json.weather[0].description;
+                document.getElementById("weather").innerHTML = xhr.responseText;
             } else {
-                console.log("error msg: " + xhr.status);
+                console.log("error retreiving weather: " + xhr.status);
             }
         }
     };
